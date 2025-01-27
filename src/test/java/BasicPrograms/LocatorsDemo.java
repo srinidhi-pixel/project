@@ -1,6 +1,5 @@
 package BasicPrograms;
 
-import java.net.http.WebSocket;
 import java.util.List;
 
 import org.openqa.selenium.By;
