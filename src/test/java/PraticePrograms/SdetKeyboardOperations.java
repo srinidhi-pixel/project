@@ -5,6 +5,7 @@ import java.time.Duration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
@@ -15,11 +16,12 @@ public class SdetKeyboardOperations {
 		driver.get("https://text-compare.com/");
 		driver.manage().window().maximize();
 		
-		driver.findElement(By.xpath("//textarea[@id='inputText1']")).sendKeys("welcome");
+		WebElement element = driver.findElement(By.xpath("//textarea[@id='inputText1']"));
+		element.sendKeys("welcome");
 		
 		
 		Actions a = new Actions(driver);
-		//ctrl+A select the text 
+	//	ctrl+A select the text 
 		a.keyDown(Keys.CONTROL).sendKeys("A").keyUp(Keys.CONTROL).perform();//keydown for pressing ctrl. key up for releasing the ctrl
 		
 		//ctrl+c   copy the text into clipboard
@@ -32,6 +34,11 @@ public class SdetKeyboardOperations {
 		
 		a.keyDown(Keys.CONTROL).sendKeys("V").keyUp(Keys.CONTROL).perform();
 		
+//		element.sendKeys(Keys.CONTROL+"A");
+//		element.sendKeys(Keys.CONTROL+"c");
+//		element.sendKeys(Keys.CONTROL.TAB);
+//		element.sendKeys(Keys.CONTROL+"v");
+//		
 		
 	}
 

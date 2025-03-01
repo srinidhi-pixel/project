@@ -17,6 +17,8 @@ public class SoftAssertDemo {
 	  System.out.println(" i am m1");//this will not execute
 	 sa.assertAll();// this will execute
 	 
+	 
+	 
  }
 
 }

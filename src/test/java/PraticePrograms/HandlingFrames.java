@@ -47,7 +47,7 @@ public class HandlingFrames {
 		
 		WebElement frame3 = driver.findElement(By.xpath("//*[@src='frame_3.html']"));
 		driver.switchTo().frame(frame3);
-		driver.findElement(By.xpath("//*[@name='mytext3']")).sendKeys("selenium");
+	//	driver.findElement(By.xpath("//*[@name='mytext3']")).sendKeys("selenium");
 		
 		// inner i frame  which is inside frame 3. there is only one i frame inside so use index
 		

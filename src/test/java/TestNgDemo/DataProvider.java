@@ -33,12 +33,14 @@ public class DataProvider {
 }
 	
 	@org.testng.annotations.DataProvider
-	String [][] loginData() {
+Object [][] loginData() {
 		
-		
-		String data[][]= {{"Admin","admin123"}, {"Admin","admin12345"},{"Adi","admin123"},{"Aditya","admin123@"} };
+		      
+	Object data[][]= {{"Admin","admin123"}, {"Admin","admin12345"},{"Adi","admin123"},{"Aditya","admin123@"} };
 	return data;
 	}
+	
+	
 	
 	
 	

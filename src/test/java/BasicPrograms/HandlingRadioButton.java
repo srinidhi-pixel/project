@@ -13,23 +13,23 @@ public class HandlingRadioButton {
 		driver.get("https://rahulshettyacademy.com/AutomationPractice/");
 		driver.manage().window().maximize();
 		
-		
-		WebElement r1 = driver.findElement(By.xpath("//input[@value='radio1']"));
-		System.out.println(r1.isDisplayed());
-		System.out.println(r1.isEnabled());
-		System.out.println(r1.isSelected());
-		r1.click();
-     
-		WebElement r2 = driver.findElement(By.xpath("//input[@value='radio2']"));
-		System.out.println(r2.isDisplayed());
-		System.out.println(r2.isEnabled());
-		System.out.println(r2.isSelected());
-		r2.click();
-		WebElement r3 = driver.findElement(By.xpath("//input[@value='radio3']"));
-		System.out.println(r3.isDisplayed());
-		System.out.println(r3.isEnabled());
-		System.out.println(r3.isSelected());
-		r3.click();
+//		
+//		WebElement r1 = driver.findElement(By.xpath("//input[@value='radio1']"));
+//		System.out.println(r1.isDisplayed());
+//		System.out.println(r1.isEnabled());
+//		System.out.println(r1.isSelected());
+//		r1.click();
+//     
+//		WebElement r2 = driver.findElement(By.xpath("//input[@value='radio2']"));
+//		System.out.println(r2.isDisplayed());
+//		System.out.println(r2.isEnabled());
+//		System.out.println(r2.isSelected());
+//		r2.click();
+//		WebElement r3 = driver.findElement(By.xpath("//input[@value='radio3']"));
+//		System.out.println(r3.isDisplayed());
+//		System.out.println(r3.isEnabled());
+//		System.out.println(r3.isSelected());
+//		r3.click();
 //		
 //	 String text = driver.findElement(By.xpath("//label[text()='radio1']")).getText();
 //		System.out.println(text);

@@ -27,11 +27,12 @@ public class CapturingScreenShot {
 	//	driver.findElement(By.xpath("//*[@src='/web/images/ohrm_branding.png?v=1721393199309']"));
 		TakesScreenshot ts = (TakesScreenshot)driver.findElement(By.xpath("//*[@src='/web/images/ohrm_branding.png?v=1721393199309']"));
 		File sourcefile = ts.getScreenshotAs(OutputType.FILE);
-		   File destinationfile= new File("C:\\Users\\ACS\\Desktop\\screnshot\\hompage.png");
+		 //  File destinationfile= new File("System.\\SCRRENSHOT\\hompage.png");
+		File destinationfile= new File(System.getProperty("user.dir")+"\\SCRRENSHOTS\\fullpage.png");
 		   
 		   FileUtils.copyFile(sourcefile, destinationfile);
 		   
-		   System.out.println("capyured");
+		   System.out.println("capyured"); 
 	}
 	
 

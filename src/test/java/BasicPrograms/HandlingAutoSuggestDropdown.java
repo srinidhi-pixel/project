@@ -24,9 +24,15 @@ public static void main(String[] args) throws InterruptedException {
 
 	
 	List<WebElement> list = driver.findElements(By.xpath("//a[@class='ui-corner-all']"));
-	for (int i = 0; i <list.size(); i++) {
-	if(list.get(i).getText().equals("India")) {
-              list.get(i).click();		
+//	for (int i = 0; i <list.size(); i++) {
+//	if(list.get(i).getText().equals("India")) {
+//              list.get(i).click();		
+//	}
+	for (WebElement webElement : list) {
+		if (webElement.getText().equals("India")) {
+			webElement.click();
+		}
+		
 	}
 	
 	
@@ -60,5 +66,4 @@ public static void main(String[] args) throws InterruptedException {
           
 
 	}
-}
 }

@@ -26,9 +26,13 @@ public class TakesceenShoot {
 	mywait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@name='username']")));
 	TakesScreenshot ts = (TakesScreenshot)driver;
 	File sourcefile = ts.getScreenshotAs(OutputType.FILE);
-	File dstnationfile=new File("C:\\Users\\ACS\\Desktop\\screnshot\\hompage.png");
+	File dstnationfile=new File("C:\\Users\\ACS\\Desktop\\SCREENSHOT\\hompage.png");
 	FileUtils.copyFile(sourcefile, dstnationfile);
 	System.out.println("capyured");
 	
 			}
+
+	
+		
+	
 }

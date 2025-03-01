@@ -19,23 +19,23 @@ public class ScrollBar {
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		
 		// 1) scroll by pixel number
-	//	js.executeScript("window.scrollBy(0,1500)","");
-		//System.out.println(js.executeScript("return window.pageYOffset;"));
+	js.executeScript("window.scrollBy(0,1000)","");
+	System.out.println(js.executeScript("return window.pageYOffset;"));
 	
 	
 	//2) scroll the page till the element is visible
 
-	//WebElement btn = driver.findElement(By.xpath("//a[@class='btn blue-button']"));
-    //js.executeScript("arguments[0].scrollIntoView();", btn);
-	//System.out.println(js.executeScript("return window.pageYOffset;"));
+//	WebElement btn = driver.findElement(By.xpath("//a[@class='btn blue-button']"));
+//    js.executeScript("arguments[0].scrollIntoView();", btn);
+//	System.out.println(js.executeScript("return window.pageYOffset;"));
 	
 		//3) scroll the page till end of the page
-				js.executeScript("window.scrollBy(0,document.body.scrollHeight)");
-				System.out.println(js.executeScript("return window.pageYOffset;"));
-		Thread.sleep(5000);
-		
-		// scrolling up to initial position 
-		js.executeScript("window.scrollBy(0,-document.body.scrollHeight)");// put minus
+			//	js.executeScript("window.scrollBy(0,document.body.scrollHeight)");
+//				System.out.println(js.executeScript("return window.pageYOffset;"));
+//		Thread.sleep(5000);
+//		
+//		// scrolling up to initial position 
+//		js.executeScript("window.scrollBy(0,-document.body.scrollHeight)");// put minus
 	}
 
 }
